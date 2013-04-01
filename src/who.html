@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+Who - The source persons :-)
+</title>
+<meta name="author" content="mindon/at/gmail.com" />
+
+<style type="text/css">
+@font-face {
+  font-family: SourceCodePro;
+  src: url(fonts/SourceCodePro-Light.ttf);
+}
+html,body{overflow:hidden}
+
+html {background: #fcfcfc url("images/bg.png") fixed no-repeat right top};
+body,ul,li {
+	padding:10px;
+	margin:0;
+}
+
+body {
+	-webkit-user-select:none;
+  -webkit-text-size-adjust:none;
+	font-family: SourceCodePro;
+}
+
+h1, h2, h3 {
+  margin:0; padding:0;
+}
+
+#wrapper {
+	width:600px;
+  margin: 0 auto;
+
+	position:relative;	/* On older OS versions "position" and "z-index" must be defined, */
+	z-index:1;			/* it seems that recent webkit is less picky and works anyway. */
+	overflow:hidden;
+
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	-o-border-radius:10px;
+	border-radius:10px;
+  background-color: #f6f6f6;
+}
+
+#scroller {
+	width:600px;
+	float:left;
+	padding:0;
+}
+
+#scroller ul {
+	list-style:none;
+	display:block;
+	float:left;
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	text-align:left;
+}
+
+#scroller li {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+	display:block; float:left;
+	text-align:center;
+	font-size:18px;
+	line-height:140%;
+  text-align: left;
+}
+
+#nav {
+	width:600px;
+  margin: 0 auto;
+}
+
+#prev, #next {
+	float:left;
+	font-weight:bold;
+	font-size:14px;
+	padding:5px 0;
+	width:60px;
+}
+
+#gplus {
+	float:right;
+	margin-top: 2px;
+  margin-right: 6px;
+}
+#gplus a {
+  color: #c00;
+  font-size: 8pt;
+  font-weight: bold;
+}
+
+#next {
+	float:right;
+	text-align:right;
+}
+
+#indicator, #indicator > li {
+	display:block; float:left;
+	list-style:none;
+	padding:0; margin:0;
+}
+
+#indicator {
+	padding:12px 0 0 30px;
+}
+
+#indicator > li {
+	text-indent:-9999em;
+	width:8px; height:8px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	-o-border-radius:4px;
+	border-radius:4px;
+	background:#ddd;
+	overflow:hidden;
+	margin-right:4px;
+}
+
+#indicator > li.active {
+	background:#888;
+}
+
+#indicator > li:last-child {
+	margin:0;
+}
+
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-button {
+  background-color: #EDEDED;
+}
+::-webkit-scrollbar-button:hover, ::-webkit-scrollbar-thumb:hover {
+  background-color: #D9DAF6;
+}
+::-webkit-scrollbar-button:active, ::-webkit-scrollbar-thumb:active {
+  background-color: #AEC6EC;
+}
+::-webkit-scrollbar-track {
+  background-color: #F6F6F7;
+}
+::-webkit-scrollbar-track:hover {
+  background-color: #F0F0F1;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #EDEDED;
+}
+
+.profile {
+	width:600px;
+	position:relative;	/* On older OS versions "position" and "z-index" must be defined, */
+	z-index:1;			/* it seems that recent webkit is less picky and works anyway. */
+	overflow:hidden;
+}
+
+.detail {
+  border-radius: 8px;
+  background-color: #efefef;
+  margin: 0 6px 8px 6px;
+  padding: 4px;
+}
+.detail .avatar {
+  float: left;
+  margin-right: 16px;
+  border-radius: 6px;
+  -webkit-user-select: none;
+}
+.detail .name {
+  font-size: 14pt;
+  font-weight: bold;
+}
+.photo {
+  position: relative;
+}
+.photo img {
+  border-radius: 8px;
+}
+.source {
+  font-size: 23pt;
+  font-weight: bold;
+  text-align: center;
+  -webkit-user-select: none;
+  margin: 10px 0;
+}
+.search {
+  float: right;
+  margin-right: 16px;
+  -webkit-user-select: none;
+}
+
+h1 i {
+  font-family: SourceCodePro;
+  font-weight: normal;
+  font-size: 0.76em;
+}
+</style>
+<script src="scripts/iscroll.js"></script>
+<script src="scripts/who.js"></script>
+</head>
+
+ <body><div style="text-align:center;height:95px">
+<h1>Who<i> - The source persons</i></h1>
+<h3>Names &amp; faces you should know</h3>
+<div id="nav">
+	<div id="prev">&larr; prev</div>
+	<ul id="indicator">
+		<li class="active" title="LAMBDA CALCULUS">1</li>
+	</ul>
+	<div id="next">next &rarr;</div>
+  <div id="gplus"><a href="https://plus.google.com/u/0/101618985821890633180" target="_blank" title="Google+ Page">G+</a>|<a href="http://mindon.github.com" target="_blank" title="Mindon.IDEA - Author Blogs">M+</a>|<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=C8FA3MUZL8REU" target="_blank" title="Inspire Me with a donation">D+</a></div>
+</div>
+</div>
+<div id="wrapper">
+	<div id="scroller">
+		<ul id="thelist">
+		</ul>
+	</div>
+</div>
+</body>
+</html>
