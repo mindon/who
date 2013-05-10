@@ -5,7 +5,7 @@ if(!icount)
 
 function _ob(id){return document.getElementById(id)}
 
-var list = 'lambda-calculus,turing-machine,plankalkül,machine-code,assembly,fortran,flow-matic,apl,algol,lisp,simula,pl-i,basic,c,pascal,smalltalk,prolog,ml,ada,sql,cpp,objective-c,perl,python,ruby,lua,php,java,javascript,c-sharp'.split(',');
+var list = 'lambda-calculus,turing-machine,plankalkul,machine-code,assembly,fortran,flow-matic,apl,algol,lisp,simula,pl-i,basic,c,pascal,smalltalk,prolog,ml,ada,sql,cpp,objective-c,perl,python,ruby,lua,php,java,javascript,c-sharp'.split(',');
 
 function loaded() {
 	myScroll = new iScroll('wrapper', {

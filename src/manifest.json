@@ -1,15 +1,15 @@
 {
-  "name": "Who",
-  "description": "The source persons: Programming languages version :-)",
-  "icons": {
-    "16": "images/16.png",
-    "128": "images/128.png"
-  },
-  "app": {
-    "launch": {
-      "local_path": "who.html"
-    }
-  },
-  "manifest_version": 2,
-  "version": "2.9.9"
+ "name": "Who"
+ ,"description": "The source persons: Programming languages version :-)"
+ ,"version": "3.0.1"
+ ,"app" : {
+   "background": {
+     "scripts": ["scripts/start.js"]
+   }
+ }
+ ,"icons": {
+   "16": "images/16.png"
+  ,"128": "images/128.png"
+ }
+ ,"offline_enabled": true
 }
